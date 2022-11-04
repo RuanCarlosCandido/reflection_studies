@@ -168,7 +168,7 @@ public class Tests {
 		Dog instanceViaReflection = constructorUsingName.newInstance(new Object[] {"Diana"});
 		
 		assertEquals("Diana", instanceViaReflection.toString());
-	
+		assertEquals(1, constructorUsingName.getParameterCount());
 		
 	}
 }
