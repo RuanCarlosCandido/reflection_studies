@@ -170,7 +170,6 @@ public class Tests {
 		
 		assertEquals("Diana", instanceViaReflection.toString());
 		assertEquals(1, constructorUsingName.getParameterCount());
-		//
-		
+				
 	}
 }
