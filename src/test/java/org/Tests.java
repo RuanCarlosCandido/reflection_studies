@@ -1,26 +1,24 @@
 package org;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import java.lang.annotation.Annotation;
 import java.lang.constant.ClassDesc;
 import java.lang.invoke.MethodHandles;
 import java.lang.reflect.AnnotatedType;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Type;
-import java.lang.reflect.TypeVariable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 import org.junit.jupiter.api.Test;
 import org.model.Animal;
 import org.model.Cat;
 import org.model.CustomClassAnnotation;
-import org.model.CustomMethodAnnotation;
 import org.model.Dog;
 import org.model.Square;
 
@@ -169,6 +167,6 @@ public class Tests {
 		
 		assertEquals("Diana", instanceViaReflection.toString());
 		assertEquals(1, constructorUsingName.getParameterCount());
-		
+				
 	}
 }
